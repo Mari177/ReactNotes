@@ -149,3 +149,22 @@ root.render(heading);
 <script src="./App.js" defer></script>
 ```
 
+# Parcel
+
+- Dev build
+- Local Server
+- HMR = Hot Module Replacement
+- Using File Watching algorithm written in C++
+- Caching - Faster builds
+- Image optimization
+- Minification
+- Bundling
+- Compressing the files
+- Consistent Hashing
+- Code splitting
+- Differential Bundling - supporting older browsers
+- Error handling
+- Diagnostic
+- supports Https hosting
+- Tree shaking
+- Different dev and production builds
