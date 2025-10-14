@@ -1,11 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent = React.createElement("div", { id: "parent" }, [React.createElement("div", { id: "child1" }, [
-    React.createElement("h1", {}, "I am h1 tag"), React.createElement("h2", {}, "Enna ma kannu"),
-]), React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", {}, "I am h1 tag"), React.createElement("h2", {}, "power is beast"),
-])]);
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+const Title = () => (
+        <h1 className="title">  
+        Sivagnanasambandhar Vazhga
+        </h1>
+    );
+
+const data = 10000;
+
+let HeadingComponent = () => (
+    <div id="container">
+         <Title></Title>
+         <Title/>
+         {Title()}
+        <h1 id="heading" className="headClass">Namaste React functional component </h1>
+    </div>
+);
+
+
+
+
+let root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<HeadingComponent />);
